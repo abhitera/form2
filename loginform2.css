@@ -10,7 +10,7 @@ input {
 
 }
 input:focus {
-    background-color: lightblue;
+    background-color: lightred;
 }
 input[type=submit] {
     background-color: #4CAF50;
