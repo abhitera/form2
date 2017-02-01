@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LoginForm</title>
+
+    <script src="loginform2.js"></script>
+    <link rel="stylesheet" href="loginform2.css">
+
+
+</head>
+<body>
+
+<form name="myForm" action="demo_form.html" onsubmit="return validForm()" method="post">
+    Name:<input type="text" name="fname"><br>
+    Email:<input type="email" name="email" ><br>
+    Age:<input id="id"type="number" min="18" max="100"><br>
+    Gender:<br> <input type="radio" name="gender" value="male" > Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br><br>
+    Profession:<input list="Profession" name="Profession">
+    <datalist id="Profession">
+        <option value="Engineer">
+        <option value="Doctor">
+        <option value="InformationTechnology">
+        <option value="Teacher">
+        <option value="Other">
+    </datalist>
+    <br>
+    State:<select name="states">
+    <option value="Bihar">Bihar</option>
+    <option value="Up">Up</option>
+    <option value="Punjab">Punjab</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Haryana">Haryana</option>
+</select><br>
+
+    <input class='submitBtn' type="submit" value="submit">
+</form>
+
+</body>
+</html>
